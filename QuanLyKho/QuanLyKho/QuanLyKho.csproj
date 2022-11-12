@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EBDA0387-A9BB-4C0B-912E-6418F4F552A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLyKho</RootNamespace>
+    <AssemblyName>QuanLyKho</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="account.cs" />
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="App_Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="App_Cashier.Designer.cs">
+      <DependentUpon>App_Cashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="APP_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APP_Emp.Designer.cs">
+      <DependentUpon>APP_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creatAcount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creatAcount.Designer.cs">
+      <DependentUpon>creatAcount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet_KH.cs">
+      <DependentUpon>DataSet_KH.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet_KH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet_KH.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeC.cs" />
+    <Compile Include="inhangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inhangnhap.Designer.cs">
+      <DependentUpon>inhangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inhangtrongkho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inhangtrongkho.Designer.cs">
+      <DependentUpon>inhangtrongkho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InHangXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHangXuat.Designer.cs">
+      <DependentUpon>InHangXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InKhachHang.Designer.cs">
+      <DependentUpon>InKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InNCC.Designer.cs">
+      <DependentUpon>InNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InNhanVien.Designer.cs">
+      <DependentUpon>InNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InObject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InObject.Designer.cs">
+      <DependentUpon>InObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputC.cs" />
+    <Compile Include="Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Input.Designer.cs">
+      <DependentUpon>Input.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHangC.cs" />
+    <Compile Include="KHO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KHO.Designer.cs">
+      <DependentUpon>KHO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KHO_C.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NCC.cs">
+      <DependentUpon>NCC.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="NCC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NV.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NV.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OBJECT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OBJECT.Designer.cs">
+      <DependentUpon>OBJECT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjectC.cs" />
+    <Compile Include="Output.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Output.Designer.cs">
+      <DependentUpon>Output.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutPutC.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Role.Designer.cs">
+      <DependentUpon>Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supiler.Designer.cs">
+      <DependentUpon>Supiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suplier.cs" />
+    <Compile Include="TypeRole.cs" />
+    <Compile Include="Unit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unit.Designer.cs">
+      <DependentUpon>Unit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitC.cs" />
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_Cashier.resx">
+      <DependentUpon>App_Cashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="APP_Emp.resx">
+      <DependentUpon>APP_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creatAcount.resx">
+      <DependentUpon>creatAcount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inhangnhap.resx">
+      <DependentUpon>inhangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inhangtrongkho.resx">
+      <DependentUpon>inhangtrongkho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InHangXuat.resx">
+      <DependentUpon>InHangXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InKhachHang.resx">
+      <DependentUpon>InKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InNCC.resx">
+      <DependentUpon>InNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InNhanVien.resx">
+      <DependentUpon>InNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InObject.resx">
+      <DependentUpon>InObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Input.resx">
+      <DependentUpon>Input.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KHO.resx">
+      <DependentUpon>KHO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OBJECT.resx">
+      <DependentUpon>OBJECT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Output.resx">
+      <DependentUpon>Output.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report_in.rdlc" />
+    <EmbeddedResource Include="Report_KH.rdlc" />
+    <EmbeddedResource Include="Report_kho.rdlc" />
+    <EmbeddedResource Include="Report_NCC.rdlc" />
+    <EmbeddedResource Include="Report_NV.rdlc" />
+    <EmbeddedResource Include="Report_ob.rdlc" />
+    <EmbeddedResource Include="Report_out.rdlc" />
+    <EmbeddedResource Include="Role.resx">
+      <DependentUpon>Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supiler.resx">
+      <DependentUpon>Supiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unit.resx">
+      <DependentUpon>Unit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet_KH.xsc">
+      <DependentUpon>DataSet_KH.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet_KH.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet_KH.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet_KH.xss">
+      <DependentUpon>DataSet_KH.xsd</DependentUpon>
+    </None>
+    <None Include="NCC.xsc">
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </None>
+    <None Include="NCC.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NCC.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NCC.xss">
+      <DependentUpon>NCC.xsd</DependentUpon>
+    </None>
+    <None Include="NV.xsc">
+      <DependentUpon>NV.xsd</DependentUpon>
+    </None>
+    <None Include="NV.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NV.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="NV.xss">
+      <DependentUpon>NV.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
